@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+font-family: "Arima", system-ui;
+font-family: "Open Sans", sans-serif;
+font-family: "Poppins", sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font: 400 16px/1.5 "Poppins", sans-serif;
+    color: #5b5757;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+h1{
+    font-family: "Open Sans", sans-serif;
+}
+
+h2{
+    font-family: "Arima", system-ui;
+    font-size: 30px;
+    color: #000;
+}
+
+/*----------------------------------------------*/
+
+.pageHeader{
+    height: 90px;
+    background-color: #31060f;
+    color: #fff;
+}
+
+.container{
+    width: 98%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pageHeader .container, .pageHeader .mainNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pageHeader .mainNav{
+    font-family: "Poppins", sans-serif;
+}
+
+.mainNav ul li{
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.mainNav ul li a{
+    color:#e7ddc2;
+    line-height: 88px;
+    display: block;
+    padding: 0 10px;
+    border-bottom: solid 2px #31060f;
+}
+
+.mainNav ul li a:hover, .mainNav ul li a.active a{ 
+    border-bottom: solid 2px #fff;
+    background-color: #e7ddc2;
+    color: #31060f;
+}
+
+.mainNav ul li ul{
+    position: absolute;
+    left: 0;
+    top: 88px;
+    width: 200px;
+    z-index: 9999;
+    border-radius: 0 0 10px 10px;
+    background-color: #e7ddc2;
+    overflow: hidden;
+    display: none;
+
+}
+
+.mainNav ul li ul li{
+    display: block;
+    margin-right: 0;
+    
+}
+
+.mainNav ul li ul li a{
+    line-height: 30px;
+    color: #31060f;
+    display: block;
+    border: 0;
+    padding: 10px;
+}
+
+.mainNav ul li ul li a:hover{
+    border-bottom: 0;
+    color: #fff;
+    background-color: #31060f;
+}
+
+
+
+
+.logo{
+    margin-top: 10px;
+}
+
+.loginBtn{
+    display: block;
+    background-color: #e7ddc2;
+    color: #000;
+    padding: 0 25px;
+}
+
+.loginBtn span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loginBtn:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner .strip{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.banner h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 125px;
+    line-height: 100px;
+    margin-top: 10%;
+}
+
+.banner h1 span{
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: 20px;
+
+}
+
+.banner p{
+    margin: 35px 0;
+}
+
+.btn{
+    display: inline-block;
+    height: 76px;
+    line-height: 76px;
+    padding: 0 40px;
+    background-color: #fff;
+    color: #31060f;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: #eddcb0;
+}
+
+.btnInline{
+    background: none!important;
+    padding: 0;
+}
+
+.btnInline:hover{
+    text-decoration: underline;
+}
+
+.activityArea{
+    background: url(../images/activity-backgroumd.jpg) no-repeat 50% 0 #fff;
+}
+
+.service .container{
+    padding: 150px 0 55px;
+    position: relative;
+}
+
+.serviceList{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 78px;
+    text-align: center;
+}
+
+.serviceList li img{
+    margin: auto;
+}
+
+.serviceList li h3{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 40px 0 20px;
+}
+
+.bookingForm{
+    height: 118px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -59px;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    overflow: hidden;
+}
+
+.bookingForm label{
+    display: block;
+    height: 118px;
+    box-sizing: border-box;
+    padding: 30px 0 0 38px;
+    color: #000;
+}
+
+.bookingForm input{
+    display: block;
+    height: 30px;
+    width: 100%;
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.bookingForm input[type = "submit"]{
+    background-color: #31060f;
+    color: #fff;
+    display: block;
+    height: 118px;
+    border: 0;
+    outline: 0;
+}
+
+.topSection{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 15px;
+}
+
+
+.activityGallery{
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto;
+}
+
+.activityGallery figure img{
+    width: 100%;
+}
+
+.activityGallery figure{
+    position: relative;
+}
+
+
+.activityGallery figure h3{
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    box-sizing: border-box;
+    line-height: 72px;
+    font-size: 18px;
+    font-weight: 500;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.activityGallery figure:hover h3{
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+
+.tours{
+    background: url(../images/activity-backgroumd.jpg) no-repeat 50% 100% #fff;
+    padding: 80px 0 50px;
+}
+
+.tourDetails ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 47px;
+}
+
+.tourDetails ul li p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #8a8586;
+}
+
+.tourDetails ul li figure{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tourDetails ul li figure span{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 12px;
+    line-height: 24px;
+    background-color: #403d3d;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.tourDetails ul li h3{
+    font-weight: 600;
+    margin: 20px 0;
+    color: #000;
+}
+
+p.stars{
+    margin-top: 34px;
+}
+
+p.stars i{
+    color: #000;
+}
+
+.deleted{
+    text-decoration: line-through;
+}
+
+.newTour{
+    padding-top: 50px;
+}
+
+.pageFooter{
+    background-color: #31060f;
+    height: 465px;
+    color: #fff;
+}
+
